@@ -99,6 +99,29 @@ main {
     font-weight: 700;
     line-height: normal;
   }
+  .common-sub-heading {
+    color: #011c46;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26.24px;
+    text-transform: uppercase;
+  }
+  .common-heading-lg {
+    color: #252c32;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 63.36px;
+    letter-spacing: -0.48px;
+  }
+  .common-para {
+    color: #6b7280;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.52px;
+  }
   /* common style =End= */
   
 
