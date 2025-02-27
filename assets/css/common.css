@@ -96,14 +96,13 @@ main {
   }
   .common-heading {
     font-family: Poppins;
-    font-size: 40px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
   .common-sub-heading {
-    color: #011c46;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 26.24px;
