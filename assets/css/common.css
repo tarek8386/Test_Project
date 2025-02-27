@@ -78,7 +78,9 @@ body {
 main {
   overflow: hidden;
 }
-
+/* body::-webkit-scrollbar {
+    display: none ;
+  } */
 /* common style starts */
 .container {
     max-width: 1220px;
