@@ -1,59 +1,74 @@
-@media only screen and (min-width: 1366px) and (max-width: 1600px){
+@media only screen and (min-width: 1366px) and (max-width: 1600px) {}
 
-}
-@media only screen and (min-width: 1200px) and (max-width: 1365px){
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {}
 
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px){
-
-}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
 @media only screen and (min-width: 992px) {
-    .close-sidebar-btn {
-      display: none;
-    }
-
-  
-  }
-  
-  @media only screen and (max-width: 991px) {
-    .mobile-header {
-      display: flex !important;
-      background-color: var(--primary);
-    }
-  
-    header {
-        position: absolute;
-      width: 320px;
-      height: 100vh;
-      z-index: 999;
-      top: 0;
-      left: -350px;
-      transition: left 0.3s ease-in-out;
-      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    }
-  
-    .header-main {
-      flex-direction: column;
-      height: 100vh;
-      justify-content: flex-start;
-      background-color: var(--primary);
-      z-index: 990;
-    }
-  
-    .menu-area {
-      flex-direction: column;
-      gap: 30px;
-    }
-  .language-selector-desktop{
+  .close-sidebar-btn {
     display: none;
   }
-  
-   
-  }
- @media only screen and (min-width: 768px) and (max-width: 991px){
 
- }
- @media only screen and (min-width: 501px) and (max-width: 767px){
-  
- }
+
+}
+
+@media only screen and (max-width: 991px) {
+  .mobile-header {
+    display: flex !important;
+    background-color: var(--primary);
+  }
+
+  header {
+    position: absolute;
+    width: 320px;
+    height: 100vh;
+    z-index: 999;
+    top: 0;
+    left: -350px;
+    transition: left 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .header-main {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    background-color: var(--primary);
+    z-index: 990;
+  }
+
+  .menu-area {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .language-selector-desktop {
+    display: none;
+  }
+
+  .about-us-single-item {
+    flex-direction: column !important;
+  }
+
+  .about-us-img-area img {
+    width: 100%;
+  }
+
+  .about-us-text-content-wrapper {
+    padding: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .about-us-single-item {
+    gap: 30px;
+
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {}

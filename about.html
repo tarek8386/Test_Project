@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <meta http-equiv="Content-Language" content="en">
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+
+    <!-- mobile header -->
+    <div
+      class="mobile-header d-flex align-items-center justify-content-between p-3 d-none">
+      <a href="./index.html" class="mobile-logo">
+        <img src="./assets/images/logo.png" alt="logo">
+      </a>
+      <div class="mobile-header-right">
+        <div class="language-selector">
+          <div class="language-dropdown">
+            <div class="selected-language" onclick="toggleMobileDropdown()">
+              <img id="mobile-selected-flag"
+                src="https://flagcdn.com/w40/us.png" alt="🇺🇸">
+              <span id="mobile-selected-language-text">En</span> <span
+                class="arrow">▼</span>
+            </div>
+            <ul class="language-options" id="mobileLanguageList">
+              <li onclick="changeMobileLanguage('en', 'us', 'English')"><img
+                  src="https://flagcdn.com/w40/us.png"> English</li>
+              <li onclick="changeMobileLanguage('fr', 'fr', 'Français')"><img
+                  src="https://flagcdn.com/w40/fr.png"> Français</li>
+              <li onclick="changeMobileLanguage('no', 'no', 'Norsk')"><img
+                  src="https://flagcdn.com/w40/no.png"> Norsk</li>
+              <li onclick="changeMobileLanguage('sv', 'se', 'Svenska')"><img
+                  src="https://flagcdn.com/w40/se.png"> Svenska</li>
+              <li onclick="changeMobileLanguage('fi', 'fi', 'Suomi')"><img
+                  src="https://flagcdn.com/w40/fi.png"> Suomi</li>
+              <li onclick="changeMobileLanguage('it', 'it', 'Italiano')"><img
+                  src="https://flagcdn.com/w40/it.png"> Italiano</li>
+              <li onclick="changeMobileLanguage('pl', 'pl', 'Polski')"><img
+                  src="https://flagcdn.com/w40/pl.png"> Polski</li>
+              <li onclick="changeMobileLanguage('es', 'es', 'Español')"><img
+                  src="https://flagcdn.com/w40/es.png"> Español</li>
+              <li onclick="changeMobileLanguage('de', 'de', 'Deutsch')"><img
+                  src="https://flagcdn.com/w40/de.png"> Deutsch</li>
+              <li onclick="changeMobileLanguage('nl', 'nl', 'Nederlands')"><img
+                  src="https://flagcdn.com/w40/nl.png"> Nederlands</li>
+              <li onclick="changeMobileLanguage('ja', 'jp', '日本語')"><img
+                  src="https://flagcdn.com/w40/jp.png"> 日本語</li>
+              <li onclick="changeMobileLanguage('pt', 'pt', 'Português')"><img
+                  src="https://flagcdn.com/w40/pt.png"> Português</li>
+              <li onclick="changeMobileLanguage('hu', 'hu', 'Magyar')"><img
+                  src="https://flagcdn.com/w40/hu.png"> Magyar</li>
+              <li onclick="changeMobileLanguage('sk', 'sk', 'Slovenčina')"><img
+                  src="https://flagcdn.com/w40/sk.png"> Slovenčina</li>
+              <li
+                onclick="changeMobileLanguage('id', 'id', 'Bahasa Indonesia')"><img
+                  src="https://flagcdn.com/w40/id.png"> Bahasa Indonesia</li>
+              <li onclick="changeMobileLanguage('cs', 'cz', 'Čeština')"><img
+                  src="https://flagcdn.com/w40/cz.png"> Čeština</li>
+              <li onclick="changeMobileLanguage('et', 'ee', 'Eesti keel')"><img
+                  src="https://flagcdn.com/w40/ee.png"> Eesti keel</li>
+              <li onclick="changeMobileLanguage('lt', 'lt', 'Lietuvių')"><img
+                  src="https://flagcdn.com/w40/lt.png"> Lietuvių</li>
+              <li onclick="changeMobileLanguage('lv', 'lv', 'Latviešu')"><img
+                  src="https://flagcdn.com/w40/lv.png"> Latviešu</li>
+              <li onclick="changeMobileLanguage('tl', 'ph', 'Tagalog')"><img
+                  src="https://flagcdn.com/w40/ph.png"> Tagalog</li>
+              <li onclick="changeMobileLanguage('ro', 'ro', 'Română')"><img
+                  src="https://flagcdn.com/w40/ro.png"> Română</li>
+              <li onclick="changeMobileLanguage('bg', 'bg', 'Български')"><img
+                  src="https://flagcdn.com/w40/bg.png"> Български</li>
+              <li onclick="changeMobileLanguage('ko', 'kr', '한국어')"><img
+                  src="https://flagcdn.com/w40/kr.png"> 한국어</li>
+              <li onclick="changeMobileLanguage('zh-CN', 'cn', '中文 (简体)')"><img
+                  src="https://flagcdn.com/w40/cn.png"> 中文 (简体)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+            viewBox="0 0 24 24" fill="none">
+            <path d="M3 7H21" stroke stroke-width="1.5"
+              stroke-linecap="round" />
+            <path d="M3 12H21" stroke stroke-width="1.5"
+              stroke-linecap="round" />
+            <path d="M3 17H21" stroke stroke-width="1.5"
+              stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile header -->
+
+    <!-- header area starts -->
+    <header class="hedaer-common">
+      <div class="section-padding-x header-main">
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.png" alt srcset>
+        </a>
+        <span class="close-sidebar-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+            viewBox="0 0 384 512">
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+          </svg>
+        </span>
+        <div class="menu-area">
+          <a class="menu-area-menu  text-center text-capitalize"
+            href="./index.html">Home</a>
+          <a class="menu-area-menu active text-center text-capitalize"
+            href="./about.html">About Us</a>
+          <a class="menu-area-menu text-center text-capitalize"
+            href="contact.html">Contact Us</a>
+        </div>
+        <div class="menu-btn-wrapper">
+
+          <div id="google_translate_element"></div>
+          <a class="menu-btn menu-btn-1" href="sign-in.html" class>Log In</a>
+          <a class="menu-btn menu-btn-2" href="sign-up.html" class>Sign Up</a>
+          <div class="language-selector language-selector-desktop">
+            <div class="language-dropdown">
+              <div class="selected-language" onclick="toggleDropdown()">
+                <img id="selected-flag" src="https://flagcdn.com/w40/us.png"
+                  alt="🇺🇸">
+                <span id="selected-language-text">En</span> <span
+                  class="arrow">▼</span>
+              </div>
+              <ul class="language-options" id="languageList">
+                <li onclick="changeLanguage('en', 'us', 'English')"><img
+                    src="https://flagcdn.com/w40/us.png"> English</li>
+                <li onclick="changeLanguage('fr', 'fr', 'Français')"><img
+                    src="https://flagcdn.com/w40/fr.png"> Français</li>
+                <li onclick="changeLanguage('no', 'no', 'Norsk')"><img
+                    src="https://flagcdn.com/w40/no.png"> Norsk</li>
+                <li onclick="changeLanguage('sv', 'se', 'Svenska')"><img
+                    src="https://flagcdn.com/w40/se.png"> Svenska</li>
+                <li onclick="changeLanguage('fi', 'fi', 'Suomi')"><img
+                    src="https://flagcdn.com/w40/fi.png"> Suomi</li>
+                <li onclick="changeLanguage('it', 'it', 'Italiano')"><img
+                    src="https://flagcdn.com/w40/it.png"> Italiano</li>
+                <li onclick="changeLanguage('pl', 'pl', 'Polski')"><img
+                    src="https://flagcdn.com/w40/pl.png"> Polski</li>
+                <li onclick="changeLanguage('es', 'es', 'Español')"><img
+                    src="https://flagcdn.com/w40/es.png"> Español</li>
+                <li onclick="changeLanguage('de', 'de', 'Deutsch')"><img
+                    src="https://flagcdn.com/w40/de.png"> Deutsch</li>
+                <li onclick="changeLanguage('nl', 'nl', 'Nederlands')"><img
+                    src="https://flagcdn.com/w40/nl.png"> Nederlands</li>
+                <li onclick="changeLanguage('ja', 'jp', '日本語')"><img
+                    src="https://flagcdn.com/w40/jp.png"> 日本語</li>
+                <li onclick="changeLanguage('pt', 'pt', 'Português')"><img
+                    src="https://flagcdn.com/w40/pt.png"> Português</li>
+                <li onclick="changeLanguage('hu', 'hu', 'Magyar')"><img
+                    src="https://flagcdn.com/w40/hu.png"> Magyar</li>
+                <li onclick="changeLanguage('sk', 'sk', 'Slovenčina')"><img
+                    src="https://flagcdn.com/w40/sk.png"> Slovenčina</li>
+                <li
+                  onclick="changeLanguage('id', 'id', 'Bahasa Indonesia')"><img
+                    src="https://flagcdn.com/w40/id.png"> Bahasa Indonesia</li>
+                <li onclick="changeLanguage('cs', 'cz', 'Čeština')"><img
+                    src="https://flagcdn.com/w40/cz.png"> Čeština</li>
+                <li onclick="changeLanguage('et', 'ee', 'Eesti keel')"><img
+                    src="https://flagcdn.com/w40/ee.png"> Eesti keel</li>
+                <li onclick="changeLanguage('lt', 'lt', 'Lietuvių')"><img
+                    src="https://flagcdn.com/w40/lt.png"> Lietuvių</li>
+                <li onclick="changeLanguage('lv', 'lv', 'Latviešu')"><img
+                    src="https://flagcdn.com/w40/lv.png"> Latviešu</li>
+                <li onclick="changeLanguage('tl', 'ph', 'Tagalog')"><img
+                    src="https://flagcdn.com/w40/ph.png"> Tagalog</li>
+                <li onclick="changeLanguage('ro', 'ro', 'Română')"><img
+                    src="https://flagcdn.com/w40/ro.png"> Română</li>
+                <li onclick="changeLanguage('bg', 'bg', 'Български')"><img
+                    src="https://flagcdn.com/w40/bg.png"> Български</li>
+                <li onclick="changeLanguage('ko', 'kr', '한국어')"><img
+                    src="https://flagcdn.com/w40/kr.png"> 한국어</li>
+                <li onclick="changeLanguage('zh-CN', 'cn', '中文 (简体)')"><img
+                    src="https://flagcdn.com/w40/cn.png"> 中文 (简体)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header area ends -->
+
+    <!-- main area starts -->
+
+    <!-- main content start -->
+    <main>
+      <!-- page title section start -->
+       <section class="page-header">
+        <div class="section-padding-x">
+          <div class="page-header-conten-wrapper">
+            <h3>About Us</h3>
+            <div class="custom-breadcumb">
+              <a href="./index.html">home</a>
+              <span class="arrow-for-breadcumb">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"></path>
+                </svg>
+              </span>
+              <p>About Us</p>
+              
+            </div>
+          </div>
+        </div>
+       </section>
+
+      <!-- page title section end -->
+
+      <!-- about section start -->
+      <section class="about-us-section common-padding">
+        <div class="section-padding-x">
+          <div class="about-us-content-wrapper">
+            <div class="about-us-single-item">
+              <div class="about-us-single-item-img">
+                <div class="about-us-img-area">
+                  <img src="./assets/images/coading-model-2.png"
+                    alt="coading-model-2">
+                </div>
+              </div>
+              <div class="about-us-single-item-content">
+                <div class="about-us-text-content-wrapper">
+                  <h2 class="about-us-content-heading">
+                    Unlock Your Potential: Our Curriculum and Approach
+                  </h2>
+                  <p class="common-para">
+                    Embark on a journey of discovery with our coding curriculum,
+                    meticulously designed to unleash your full potential. Delve
+                    into a dynamic learning experience that blends theory with
+                    hands-on practice, guiding you from foundational concepts to
+                    advanced techniques. Our approach prioritizes practical
+                    application, ensuring you not only grasp coding principles
+                    but also develop the skills to build real-world projects.
+                    <br>
+                    <br>
+                    Enter a realm where possibility knows no bounds, and your
+                    journey is the compass. Our curriculum is your pathway to
+                    mastery in the dynamic world of coding, unlocking your full
+                    potential.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="about-us-single-item reverse-class">
+              <div class="about-us-single-item-img">
+                <div class="about-us-img-area">
+                  <img src="./assets/images/coading-model-3.png"
+                    alt="coading-model-2">
+                </div>
+              </div>
+              <div class="about-us-single-item-content">
+                <div class="about-us-text-content-wrapper">
+                  <h2 class="about-us-content-heading">
+                    Enroll Today to Level Up Your Coding Skills!
+                  </h2>
+                  <p class="common-para">
+                    Ready to take your coding abilities to the next level? Our
+                    comprehensive courses offer the perfect blend of theory and
+                    practice to propel you forward in your coding journey. Dive
+                    into engaging lessons, tackle real-world projects, and
+                    access a wealth of resources designed to support your
+                    growth. Whether you're a beginner or looking to refine your
+                    expertise, our platform provides the tools you need to
+                    succeed. Don't miss out on this opportunity to advance your
+                    coding skills. Enroll today and start leveling up!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about section end -->
+
+    </main>
+    <!-- main content start -->
+
+    <!-- footer start-->
+    <footer>
+
+    </footer>
+    <!-- footer end-->
+
+    <!-- javascript -->
+
+    <script src="./assets/js/main.js"></script>
+
+    <script
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  </body>
+</html>

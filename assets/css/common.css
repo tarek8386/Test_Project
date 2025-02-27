@@ -35,17 +35,17 @@ header,
 menu,
 nav,
 section {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 button:focus,
@@ -53,78 +53,89 @@ a:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: none;
+    outline: none;
 }
 
 :root {
-  --font-montserrat: "Montserrat", sans-serif;
-  --white: #fff;
-  --primary: #33A88E;
-  --dark: #222;
-  --grey: #6B7280;
-  --base-transition: all 0.3s ease;
+    --font-montserrat: "Montserrat", sans-serif;
+    --white: #fff;
+    --primary: #33A88E;
+    --dark: #222;
+    --grey: #6B7280;
+    --skyBlue: #10fafa;
+    --blue: #358bfc;
+    --base-transition: all 0.3s ease;
 }
 
 body {
-  font-family: var(--font-montserrat);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  color: var(--dark);
-  background-color: var(--white);
+    font-family: var(--font-montserrat);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: var(--dark);
+    background-color: var(--white);
 }
 
-main {
-  overflow: hidden;
+
+body::-webkit-scrollbar {
+    display: none;
 }
-/* body::-webkit-scrollbar {
-    display: none ;
-  } */
+
 /* common style starts */
 .container {
     max-width: 1220px;
     margin: 0 auto;
     width: 100%;
 }
+
 .show {
     left: 0px;
-  }
-  
-  body.no-scroll {
+}
+
+body.no-scroll {
     overflow: hidden;
-  }
-  .common-heading {
+}
+
+.common-heading {
     font-family: Poppins;
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-  }
-  .common-sub-heading {
+}
+
+.common-sub-heading {
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 26.24px;
     text-transform: uppercase;
-  }
-  .common-heading-lg {
-    color: #252c32;
+}
+
+.common-heading-lg {
+    color: var(--dark);
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 63.36px;
+    line-height: 6=53.36px;
     letter-spacing: -0.48px;
-  }
-  .common-para {
-    color: #6b7280;
+}
+
+.common-para {
+    color: var(--dark);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 29.52px;
-  }
-  /* common style =End= */
-  
+}
+
+.common-padding {
+    padding: 96px 0px;
+}
+
+/* common style =End= */
+
 
 .section-padding-x {
     padding-left: 16px;
@@ -134,57 +145,69 @@ main {
 .m-top {
     margin-top: 30px;
 }
+
 .m-bottom {
     margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 450px){
+@media only screen and (min-width: 450px) {
     .section-padding-x {
         padding-left: 20px;
         padding-right: 20px;
-    } 
-    
+    }
+
 }
-@media only screen and (min-width: 769px){
+
+@media only screen and (min-width: 769px) {
     .m-top {
         margin-top: 40px;
     }
+
     .m-bottom {
         margin-bottom: 40px;
     }
 }
-@media only screen and (min-width: 992px){
+
+@media only screen and (min-width: 992px) {
     .section-padding-x {
-        padding-left: 30px;
-        padding-right: 30px;
-    } 
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .m-top {
         margin-top: 50px;
     }
+
     .m-bottom {
         margin-bottom: 50px;
     }
 }
-@media only screen and (min-width: 1300px){
+
+@media only screen and (min-width: 1300px) {
     .section-padding-x {
-        padding-left: 120px;
-        padding-right: 120px;
-    } 
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
     .m-top {
         margin-top: 100px;
     }
+
     .m-bottom {
         margin-bottom: 100px;
     }
 }
-@media only screen and (min-width: 1700px){
+
+@media only screen and (min-width: 1700px) {
     .section-padding-x {
-        padding-left: 200px;
-        padding-right: 200px;
-    } 
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
     .m-top {
         margin-top: 150px;
     }
+
     .m-bottom {
         margin-bottom: 150px;
     }
