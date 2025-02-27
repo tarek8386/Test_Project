@@ -154,6 +154,10 @@ display: none;
   border: 1px solid #ccc;
   border-radius: 5px;
   background: #f8f8f8;
+  transition: background-color 0.3s ease;
+}
+.selected-language:hover {
+  background-color: #e8e8e8;
 }
 
 .selected-language img {
@@ -176,6 +180,15 @@ display: none;
   max-height: 200px;
   overflow-y: auto;
   z-index: 10;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and scale */
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+}
+.language-options.show-lan {
+  display: block;
+  transform: scaleY(1);
+  opacity: 1;
 }
 
 .language-options li {
@@ -183,6 +196,7 @@ display: none;
   align-items: center;
   padding: 8px 12px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .language-options li img {
@@ -215,5 +229,11 @@ display: none;
 body > .skiptranslate {
     display: none !important;
 }
+body {
+  top: 0px !important;
+  position: static !important;
+}
 
 /* language selector */
+
+
