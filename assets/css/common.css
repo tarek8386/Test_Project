@@ -83,11 +83,6 @@ body::-webkit-scrollbar {
 }
 
 /* common style starts */
-.container {
-    max-width: 1220px;
-    margin: 0 auto;
-    width: 100%;
-}
 
 .show {
     left: 0px;
@@ -118,7 +113,7 @@ body.no-scroll {
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 6=53.36px;
+    line-height: 53.36px;
     letter-spacing: -0.48px;
 }
 
@@ -141,13 +136,8 @@ body.no-scroll {
     padding-left: 16px;
     padding-right: 16px;
 }
-
-.m-top {
-    margin-top: 30px;
-}
-
-.m-bottom {
-    margin-bottom: 30px;
+.common-padding {
+    padding: 46px 0px;
 }
 
 @media only screen and (min-width: 450px) {
@@ -155,16 +145,15 @@ body.no-scroll {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .common-padding {
+        padding: 56px 0px;
+    }
 
 }
 
 @media only screen and (min-width: 769px) {
-    .m-top {
-        margin-top: 40px;
-    }
-
-    .m-bottom {
-        margin-bottom: 40px;
+    .common-padding {
+        padding: 66px 0px;
     }
 }
 
@@ -174,12 +163,8 @@ body.no-scroll {
         padding-right: 50px;
     }
 
-    .m-top {
-        margin-top: 50px;
-    }
-
-    .m-bottom {
-        margin-bottom: 50px;
+    .common-padding {
+        padding: 76px 0px;
     }
 }
 
@@ -189,12 +174,8 @@ body.no-scroll {
         padding-right: 150px;
     }
 
-    .m-top {
-        margin-top: 100px;
-    }
-
-    .m-bottom {
-        margin-bottom: 100px;
+    .common-padding {
+        padding: 80px 0px;
     }
 }
 
@@ -204,11 +185,7 @@ body.no-scroll {
         padding-right: 300px;
     }
 
-    .m-top {
-        margin-top: 150px;
-    }
-
-    .m-bottom {
-        margin-bottom: 150px;
+    .common-padding {
+        padding: 96px 0px;
     }
 }
