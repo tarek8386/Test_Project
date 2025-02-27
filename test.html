@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .sidebar {
+  display: none; /* Hide sidebar by default */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: white;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: 0.3s;
+}
+.sidebar.active {
+  display: block;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="breakdown-navbar">
+        <div class="breakdown-navbar-wrapper">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./assets/images/logo.png" alt="logo" />
+          </a>
+          <!-- Menu for both desktop and mobile -->
+          <ul class="navbar-list" id="menu">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./service-details.html">Services</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="./index.html#pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contactUs.html">Contact</a></li>
+          </ul>
+      
+          <button class="btn-custom book-now">Book Now</button>
+          <button class="hamburger" onclick="toggleSidebar()">&#9776;</button>
+        </div>
+      </nav>
+      
+      <!-- Sidebar (Reusing the same menu) -->
+      <div class="sidebar" id="sidebar">
+        <ul class="sidebar-list">
+          <!-- The same menu will be cloned here via JavaScript -->
+        </ul>
+        <button class="btn-custom">Book Now</button>
+      </div>
+
+
+      <script>
+        function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("active"); // Toggle visibility
+
+  // Clone the main menu into the sidebar only if it's empty
+  if (!sidebar.querySelector(".sidebar-list li")) {
+    const menu = document.getElementById("menu").cloneNode(true);
+    menu.classList.remove("navbar-list"); // Remove desktop class if needed
+    menu.classList.add("sidebar-list"); // Add sidebar styling if needed
+    sidebar.querySelector(".sidebar-list").replaceWith(menu);
+  }
+}
+
+      </script>
+</body>
+</html>

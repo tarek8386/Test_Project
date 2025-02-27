@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/tarek.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+
+     <!-- mobile header -->
+ <div
+ class="mobile-header d-flex align-items-center justify-content-between p-3 d-none">
+ <a href="./index.html" class="mobile-logo">
+   <img src="./assets/images/logo.svg" alt="logo">
+ </a>
+ <div class="mobile-header-right">
+    <ul>
+      <li>1</li>
+    </ul>
+   <div class="mobile-menu">
+     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+       viewBox="0 0 24 24" fill="none">
+       <path d="M3 7H21" stroke stroke-width="1.5" stroke-linecap="round" />
+       <path d="M3 12H21" stroke stroke-width="1.5" stroke-linecap="round" />
+       <path d="M3 17H21" stroke stroke-width="1.5" stroke-linecap="round" />
+     </svg>
+   </div>
+ </div>
+</div>
+<!-- mobile header -->
+
+    <!-- header area starts -->
+    <header class="hedaer-common">
+      <div class="container header-main">
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.png" alt srcset>
+        </a>
+        <span class="close-sidebar-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+            viewBox="0 0 384 512">
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+          </svg>
+        </span>
+        <div class="menu-area">
+          <a class="menu-area-menu active  text-center text-capitalize"
+            href="./index.html">Home</a>
+          <a class="menu-area-menu text-center text-capitalize"
+            href="./about.html">About Us</a>
+          <a class="menu-area-menu text-center text-capitalize"
+            href="contact.html">Contact Us</a>
+        </div>
+        <div class="menu-btn-wrapper">
+          <div class="language-selector">
+            <label>🌍 Select Language:</label>
+            <div class="language-dropdown">
+                <div class="selected-language" onclick="toggleDropdown()">
+                    <img id="selected-flag" src="https://flagcdn.com/w40/us.png" alt="🇺🇸">
+                    <span id="selected-language-text">English</span>
+                </div>
+                <ul class="language-options" id="languageList">
+                    <!-- Options with Flags -->
+                    <li onclick="changeLanguage('en', 'us', 'English')"><img src="https://flagcdn.com/w40/us.png"> English</li>
+                    <li onclick="changeLanguage('fr', 'fr', 'Français')"><img src="https://flagcdn.com/w40/fr.png"> Français</li>
+                    <li onclick="changeLanguage('no', 'no', 'Norsk')"><img src="https://flagcdn.com/w40/no.png"> Norsk</li>
+                    <li onclick="changeLanguage('sv', 'se', 'Svenska')"><img src="https://flagcdn.com/w40/se.png"> Svenska</li>
+                    <li onclick="changeLanguage('fi', 'fi', 'Suomi')"><img src="https://flagcdn.com/w40/fi.png"> Suomi</li>
+                    <li onclick="changeLanguage('it', 'it', 'Italiano')"><img src="https://flagcdn.com/w40/it.png"> Italiano</li>
+                    <li onclick="changeLanguage('pl', 'pl', 'Polski')"><img src="https://flagcdn.com/w40/pl.png"> Polski</li>
+                    <li onclick="changeLanguage('es', 'es', 'Español')"><img src="https://flagcdn.com/w40/es.png"> Español</li>
+                    <li onclick="changeLanguage('de', 'de', 'Deutsch')"><img src="https://flagcdn.com/w40/de.png"> Deutsch</li>
+                    <li onclick="changeLanguage('nl', 'nl', 'Nederlands')"><img src="https://flagcdn.com/w40/nl.png"> Nederlands</li>
+                    <li onclick="changeLanguage('ja', 'jp', '日本語')"><img src="https://flagcdn.com/w40/jp.png"> 日本語</li>
+                    <li onclick="changeLanguage('pt', 'pt', 'Português')"><img src="https://flagcdn.com/w40/pt.png"> Português</li>
+                    <li onclick="changeLanguage('hu', 'hu', 'Magyar')"><img src="https://flagcdn.com/w40/hu.png"> Magyar</li>
+                    <li onclick="changeLanguage('sk', 'sk', 'Slovenčina')"><img src="https://flagcdn.com/w40/sk.png"> Slovenčina</li>
+                    <li onclick="changeLanguage('id', 'id', 'Bahasa Indonesia')"><img src="https://flagcdn.com/w40/id.png"> Bahasa Indonesia</li>
+                    <li onclick="changeLanguage('cs', 'cz', 'Čeština')"><img src="https://flagcdn.com/w40/cz.png"> Čeština</li>
+                    <li onclick="changeLanguage('et', 'ee', 'Eesti keel')"><img src="https://flagcdn.com/w40/ee.png"> Eesti keel</li>
+                    <li onclick="changeLanguage('lt', 'lt', 'Lietuvių')"><img src="https://flagcdn.com/w40/lt.png"> Lietuvių</li>
+                    <li onclick="changeLanguage('lv', 'lv', 'Latviešu')"><img src="https://flagcdn.com/w40/lv.png"> Latviešu</li>
+                    <li onclick="changeLanguage('tl', 'ph', 'Tagalog')"><img src="https://flagcdn.com/w40/ph.png"> Tagalog</li>
+                    <li onclick="changeLanguage('ro', 'ro', 'Română')"><img src="https://flagcdn.com/w40/ro.png"> Română</li>
+                    <li onclick="changeLanguage('bg', 'bg', 'Български')"><img src="https://flagcdn.com/w40/bg.png"> Български</li>
+                    <li onclick="changeLanguage('ko', 'kr', '한국어')"><img src="https://flagcdn.com/w40/kr.png"> 한국어</li>
+                    <li onclick="changeLanguage('zh-CN', 'cn', '中文 (简体)')"><img src="https://flagcdn.com/w40/cn.png"> 中文 (简体)</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Google Translate API -->
+        <!-- <div id="google_translate_element"></div> -->
+          <a class="menu-btn menu-btn-1" href="sign-in.html" class>Log In</a>
+          <a class="menu-btn menu-btn-2" href="sign-up.html" class>Sign Up</a>
+        </div>
+      </div>
+    </header>
+    <!-- header area ends -->
+
+    <!-- main area starts -->
+
+    <!-- main content start -->
+    <main>
+
+      <h4>
+        My name is tarek
+      </h4>
+  
+
+    </main>
+    <!-- main content start -->
+
+
+    <!-- footer -->
+
+    <!-- javascript -->
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+      }
+
+      function changeLanguage(langCode, countryCode, languageName) {
+          let googleTranslateFrame = document.querySelector(".goog-te-combo");
+
+          if (googleTranslateFrame) {
+              googleTranslateFrame.value = langCode;
+              googleTranslateFrame.dispatchEvent(new Event("change"));
+          }
+
+          // Update selected language UI
+          document.getElementById("selected-flag").src = `https://flagcdn.com/w40/${countryCode}.png`;
+          document.getElementById("selected-language-text").innerText = languageName;
+
+          // Close dropdown
+          document.getElementById("languageList").style.display = "none";
+      }
+
+      function toggleDropdown() {
+          let dropdown = document.getElementById("languageList");
+          dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+      }
+
+      window.onclick = function(event) {
+          if (!event.target.closest(".language-dropdown")) {
+              document.getElementById("languageList").style.display = "none";
+          }
+      };
+  </script>
+
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  </body>
+</html>

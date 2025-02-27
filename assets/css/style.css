@@ -1,0 +1,219 @@
+/* header start */
+header {
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  transition: left 0.3s ease-in-out;
+  padding: 16px;
+  z-index: 100px;
+  position: relative;
+}
+
+
+.logo img,
+.mobile-logo img {
+  width: 50px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-area {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  transition: 0.3s ease-in-out all;
+}
+
+.menu-area a {
+  line-height: 26.24px;
+  position: relative;
+  text-decoration: none;
+  color: #e6e0e0;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  text-wrap: nowrap;
+}
+
+.menu-area a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: grey;
+  bottom: -3px;
+  left: 0;
+  border-radius: 4px;
+  transition: width 0.5s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.menu-area a:hover::after {
+  width: 100%;
+  background-color: #00b2ff;
+}
+.menu-area-menu.active {
+  color: var(--white);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.menu-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.menu-btn {
+  padding: 8px 16px;
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  border-radius: 12px;
+  text-wrap: nowrap;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+.menu-btn-1 {
+  background: #00b2ff;
+}
+.menu-btn-1:hover {
+  color: #00b2ff;
+  background: var(--white);
+  border: 1px solid #00b2ff;
+}
+.menu-btn-2 {
+  background: inherit;
+  border: 1px solid var(--white);
+}
+.menu-btn-2:hover {
+  background: #00b2ff;
+  border: 1px solid transparent;
+  color: var(--white);
+}
+
+.mobile-menu {
+  cursor: pointer;
+}
+
+.mobile-header svg {
+  stroke: rgb(26, 22, 22);
+}
+
+.close-sidebar-btn {
+  position: absolute;
+  right: 23px;
+  cursor: pointer;
+}
+
+.mobile-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+display: none;
+}
+.mobile-header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+/* language selector */
+.language-selector {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.selected-language {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f8f8f8;
+}
+
+.selected-language img {
+  width: 20px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.language-options {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.language-options li {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.language-options li img {
+  width: 20px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.language-options li:hover {
+  background: #f0f0f0;
+}
+
+/* Hide the Google Translate logo and branding */
+#google_translate_element{
+  display: none;
+}
+.goog-logo-link, 
+.goog-te-gadget span, 
+.goog-te-banner-frame, 
+.goog-te-balloon-frame {
+    display: none !important;
+}
+
+/* Hide the "Select Language" text */
+#google_translate_element select {
+    display: none !important;
+}
+
+/* Hide the Google Translate toolbar */
+body > .skiptranslate {
+    display: none !important;
+}
+
+/* language selector */

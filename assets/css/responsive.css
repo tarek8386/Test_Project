@@ -1,0 +1,41 @@
+@media only screen and (min-width: 992px) {
+    .close-sidebar-btn {
+      display: none;
+    }
+
+  
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .mobile-header {
+      display: flex !important;
+      background-color: var(--primary);
+    }
+  
+    header {
+        position: absolute;
+      width: 320px;
+      height: 100vh;
+      z-index: 999;
+      top: 0;
+      left: -350px;
+      transition: left 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+  
+    .header-main {
+      flex-direction: column;
+      height: 100vh;
+      justify-content: flex-start;
+      background-color: var(--primary);
+      z-index: 990;
+    }
+  
+    .menu-area {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+  
+   
+  }

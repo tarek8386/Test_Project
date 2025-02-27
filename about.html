@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Car Breakdown</title>
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="./assets/css/plugins/bootstrap.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="section-padding-x">
+      <nav class="breakdown-navbar">
+        <div class="breakdown-navbar-wrapper">
+          <a class="navbar-brand" href="./index.html">
+            <img src="./assets/images/logo2.png" alt="logo" />
+          </a>
+          <ul class="navbar-list">
+            <li class="nav-item cmn-color">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cmn-color" href="./service-details.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cmn-color" href="./index.html#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cmn-color" href="./about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link cmn-color" href="./contactUs.html">Contact</a>
+            </li>
+          </ul>
+
+          <button class="btn-custom book-now cmn-bg-color">Book Now</button>
+          <button class="hamburger cmn-color" onclick="toggleSidebar()">
+            &#9776;
+          </button>
+        </div>
+      </nav>
+    </div>
+    <!-- Sidebar for mobile screens -->
+    <div class="sidebar">
+      <div class="sidebar-content">
+        <div class=".sidebar-logo">
+          <img src="./assets/images/logo.png" alt="" />
+        </div>
+        <ul class="sidebar-list">
+          <li class="sidebar-item"><a href="./index.html">Home</a></li>
+          <li class="sidebar-item">
+            <a href="./service-details.html">Services</a>
+          </li>
+          <li class="sidebar-item"><a href="./index.html#pricing">Pricing</a></li>
+          <li class="sidebar-item"><a href="./about.html">About Us</a></li>
+          <li class="sidebar-item"><a href="./contactUs.html">Contact</a></li>
+        </ul>
+        <button class="btn-custom">Book Now</button>
+      </div>
+    </div>
+    <!-- header -->
+
+    <!-- main content start -->
+    <main>
+      <!-- common banner start -->
+      <section class="section-padding-x common-banner">
+        <div class="common-banner-left">
+          <h3 class="title">About Us</h3>
+          <p class="text">
+            At Car Breakdown, we are dedicated to providing top-notch roadside
+            assistance and recovery services to drivers in need.
+          </p>
+        </div>
+        <div class="common-banner-right">
+          <div class="banner-navigation">
+            <a href="./index.html">Home</a>
+            <span class="ms-1">/</span>
+            <span>About us</span>
+          </div>
+          <img
+            class="common-banner-right-img"
+            src="./assets/images/common-banner-img.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- common banner end -->
+
+      <!-- about us start -->
+      <section class="section-padding-x text-img-container m-top m-bottom">
+        <div class="text-container">
+          <div class="section-sub-title">About Us</div>
+          <div class="section-title mt-4">
+            Your Trusted Vehicle Recovery Experts
+          </div>
+          <div class="section-text mt-3">
+            At Car Breakdown, we understand how stressful vehicle breakdowns can
+            be. That’s why our team is committed to providing fast,
+            professional, and affordable services across the UK. With years of
+            experience and a fleet of modern recovery vehicles, we’ve got you
+            covered.
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress-item">
+              <div class="progress-item-header">
+                <span class="label">Experienced</span>
+                <span class="percentage">98%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-percentage="98"></div>
+              </div>
+            </div>
+
+            <div class="progress-item">
+              <div class="progress-item-header">
+                <span class="label">Reliable</span>
+                <span class="percentage">86%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-percentage="86"></div>
+              </div>
+            </div>
+
+            <div class="progress-item">
+              <div class="progress-item-header">
+                <span class="label">Skilled & Capable</span>
+                <span class="percentage">90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-percentage="90"></div>
+              </div>
+            </div>
+
+            <div class="progress-item">
+              <div class="progress-item-header">
+                <span class="label">Flexible</span>
+                <span class="percentage">76%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" data-percentage="76"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./assets/images/about-us-1.png" alt="" />
+        </div>
+      </section>
+      <!-- about us end -->
+
+      <!-- why choose us start -->
+      <section class="section-padding-x text-img-container m-top m-bottom">
+        <div class="img-container">
+          <img src="./assets/images/about-us-2.png" alt="" />
+        </div>
+        <div class="text-container">
+          <div class="section-sub-title">Why Choose Us?</div>
+          <div class="section-title mt-4">Why Choose Us?</div>
+          <div class="section-text mt-3">
+            When it comes to vehicle recovery and roadside assistance, Car
+            Breakdown stands out as your reliable partner. Here’s why drivers
+            across the UK trust us
+          </div>
+
+          <!-- benefits start -->
+          <div class="about-benefits">
+            <div class="item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  d="M29.7945 15.5C29.7945 23.5035 23.2413 30 15.1473 30C7.05319 30 0.5 23.5035 0.5 15.5C0.5 7.49647 7.05319 1 15.1473 1C23.2413 1 29.7945 7.49647 29.7945 15.5Z"
+                  stroke="#252C32"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.2912 12.678L18.8793 13.2211C19.0994 13.2544 19.2063 13.4471 19.1178 13.6515L17.677 16.9822C17.5886 17.1866 17.3384 17.3252 17.1182 17.2919C16.898 17.2586 16.7912 17.0659 16.8796 16.8615C17.2223 16.0694 16.3663 15.2933 15.6114 15.7117L11.6851 17.8881C11.517 17.9813 11.3052 17.9205 11.2121 17.7524C11.1189 17.5844 11.1796 17.3726 11.3477 17.2794L15.274 15.103C16.0289 14.6846 15.8243 13.5473 14.971 13.4182C14.7508 13.3849 14.644 13.1922 14.7324 12.9878C14.8208 12.7834 15.071 12.6447 15.2912 12.678Z"
+                  fill="#252C32"
+                />
+              </svg>
+              <span> 24/7 availability for immediate assistance. </span>
+            </div>
+
+            <div class="item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  d="M29.7945 15.5C29.7945 23.5035 23.2413 30 15.1473 30C7.05319 30 0.5 23.5035 0.5 15.5C0.5 7.49647 7.05319 1 15.1473 1C23.2413 1 29.7945 7.49647 29.7945 15.5Z"
+                  stroke="#252C32"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.2912 12.678L18.8793 13.2211C19.0994 13.2544 19.2063 13.4471 19.1178 13.6515L17.677 16.9822C17.5886 17.1866 17.3384 17.3252 17.1182 17.2919C16.898 17.2586 16.7912 17.0659 16.8796 16.8615C17.2223 16.0694 16.3663 15.2933 15.6114 15.7117L11.6851 17.8881C11.517 17.9813 11.3052 17.9205 11.2121 17.7524C11.1189 17.5844 11.1796 17.3726 11.3477 17.2794L15.274 15.103C16.0289 14.6846 15.8243 13.5473 14.971 13.4182C14.7508 13.3849 14.644 13.1922 14.7324 12.9878C14.8208 12.7834 15.071 12.6447 15.2912 12.678Z"
+                  fill="#252C32"
+                />
+              </svg>
+              <span> Experienced and professional recovery team. </span>
+            </div>
+            <div class="item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  d="M29.7945 15.5C29.7945 23.5035 23.2413 30 15.1473 30C7.05319 30 0.5 23.5035 0.5 15.5C0.5 7.49647 7.05319 1 15.1473 1C23.2413 1 29.7945 7.49647 29.7945 15.5Z"
+                  stroke="#252C32"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.2912 12.678L18.8793 13.2211C19.0994 13.2544 19.2063 13.4471 19.1178 13.6515L17.677 16.9822C17.5886 17.1866 17.3384 17.3252 17.1182 17.2919C16.898 17.2586 16.7912 17.0659 16.8796 16.8615C17.2223 16.0694 16.3663 15.2933 15.6114 15.7117L11.6851 17.8881C11.517 17.9813 11.3052 17.9205 11.2121 17.7524C11.1189 17.5844 11.1796 17.3726 11.3477 17.2794L15.274 15.103C16.0289 14.6846 15.8243 13.5473 14.971 13.4182C14.7508 13.3849 14.644 13.1922 14.7324 12.9878C14.8208 12.7834 15.071 12.6447 15.2912 12.678Z"
+                  fill="#252C32"
+                />
+              </svg>
+              <span> Affordable rates with no hidden fees. </span>
+            </div>
+            <div class="item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="31"
+                viewBox="0 0 31 31"
+                fill="none"
+              >
+                <path
+                  d="M29.7945 15.5C29.7945 23.5035 23.2413 30 15.1473 30C7.05319 30 0.5 23.5035 0.5 15.5C0.5 7.49647 7.05319 1 15.1473 1C23.2413 1 29.7945 7.49647 29.7945 15.5Z"
+                  stroke="#252C32"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.2912 12.678L18.8793 13.2211C19.0994 13.2544 19.2063 13.4471 19.1178 13.6515L17.677 16.9822C17.5886 17.1866 17.3384 17.3252 17.1182 17.2919C16.898 17.2586 16.7912 17.0659 16.8796 16.8615C17.2223 16.0694 16.3663 15.2933 15.6114 15.7117L11.6851 17.8881C11.517 17.9813 11.3052 17.9205 11.2121 17.7524C11.1189 17.5844 11.1796 17.3726 11.3477 17.2794L15.274 15.103C16.0289 14.6846 15.8243 13.5473 14.971 13.4182C14.7508 13.3849 14.644 13.1922 14.7324 12.9878C14.8208 12.7834 15.071 12.6447 15.2912 12.678Z"
+                  fill="#252C32"
+                />
+              </svg>
+              <span> Nationwide coverage for all types of vehicles. </span>
+            </div>
+          </div>
+          <!-- benefits end -->
+        </div>
+      </section>
+      <!-- why choose us end -->
+
+      <!-- counter us start -->
+      <section class="about-counter m-top m-bottom">
+        <div class="item">
+          <div class="title">05 +</div>
+          <div class="text">Years of Experience</div>
+        </div>
+        <div class="count-line"></div>
+        <div class="item">
+          <div class="title">20k +</div>
+          <div class="text">Customer Satisfaction</div>
+        </div>
+        <div class="count-line"></div>
+        <div class="item">
+          <div class="title">210 +</div>
+          <div class="text">Customer Satisfaction</div>
+        </div>
+        <div class="count-line"></div>
+        <div class="item">
+          <div class="title">164 +</div>
+          <div class="text">Certified Team</div>
+        </div>
+      </section>
+      <!-- counter us end -->
+      <!-- download starts -->
+      <section class="download-app-section">
+        <div class="download-app-container">
+          <h1 class="download-app-title">
+            Breakdowns? No worries—download our app and get instant service!
+          </h1>
+          <p class="download-app-subtitle">
+            Download our app now and get fast service, wherever you are. Solving
+            vehicle issues is just one click away!
+          </p>
+          <div class="download-app-buttons">
+            <a href="#" class="download-app-store-btn">
+              <img
+                src="./assets/images/apple.png"
+                alt="Download on the App Store"
+              />
+            </a>
+            <a href="#" class="download-google-play-btn">
+              <img
+                src="./assets/images/google-play.png"
+                alt="Get it on Google Play"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- download ends -->
+    </main>
+    <!-- main content start -->
+
+    <!-- footer -->
+    <footer class="custom-footer">
+      <div class="section-padding-x">
+        <div class="footer-container">
+          <!-- Left Section -->
+          <div class="footer-left">
+            <div class="footer-logo">
+              <a href="#">
+                <img src="./assets/images/footer-logo.png" alt="logo" />
+              </a>
+            </div>
+            <p class="footer-about">
+              At Car Breakdown, we are dedicated to providing top-notch roadside
+              assistance and recovery services to drivers in need. With years of
+              experience and a team of skilled professionals, we take pride in
+              offering prompt, reliable, and customer-focused solutions,
+              ensuring your safety and convenience come first.
+            </p>
+          </div>
+
+          <!-- Middle Section: Links -->
+          <div class="footer-links">
+            <div>
+              <h4 class="footer-heading">Company</h4>
+              <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Reviews</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="footer-heading">Resources</h4>
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div class="footer-right">
+            <h4 class="footer-heading">Get the App</h4>
+            <div class="app-links">
+              <img src="./assets/images/apple.png" alt="App Store" />
+              <img src="./assets/images/google-play.png" alt="Google Play" />
+            </div>
+
+            <p>
+              Google Play and the Google Play logo are trademarks of Google,
+              Inc. Apple, the Apple logo, and iPhone are trademarks of Apple,
+              Inc., registered in the U.S.
+            </p>
+            <div class="social-icons">
+              <a href="#"
+                ><img src="./assets/images/facebook.png" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/insta.png" alt="Instagram"
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/twitter.png" alt="Twitter"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex align-items-center justify-content-between gap-5 flex-wrap footer-bottom"
+        >
+          <p class="footer-copyright">
+            © 2024 Car Breakdown. We love our users!
+          </p>
+          <p class="footer-policies">
+            <a href="#">Terms & Conditions</a> ·
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- javascript -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const progressBars = document.querySelectorAll(".progress-bar");
+
+        progressBars.forEach((bar) => {
+          const percentage = bar.getAttribute("data-percentage");
+          // Add the width dynamically after a short delay
+          setTimeout(() => {
+            bar.style.width = percentage + "%";
+          }, 200);
+        });
+      });
+    </script>
+  </body>
+</html>
