@@ -1,19 +1,58 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".aos-animate");
-  
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-  
-    elements.forEach((element) => observer.observe(element));
+  // support chat
+  const chatBubble = document.getElementById("chatBubble");
+  const chatBox = document.getElementById("chatBox");
+  const closeChat = document.getElementById("closeChat");
+  const sendMessageBtn = document.getElementById("sendMessageBtn");
+  const chatInput = document.getElementById("chatInput");
+  const chatMessages = document.getElementById("chatMessages");
+
+  let chatOpen = false;
+
+  chatBubble.addEventListener("click", () => {
+    chatOpen = !chatOpen;
+    chatBox.classList.toggle("active");
+    chatBubble.innerHTML = chatOpen ? "✖" : "💬";
   });
+
+  closeChat.addEventListener("click", () => {
+    chatOpen = false;
+    chatBox.classList.remove("active");
+    chatBubble.innerHTML = "💬";
+  });
+
+  sendMessageBtn.addEventListener("click", () => {
+    if (chatInput.value.trim() !== "") {
+      const message = document.createElement("div");
+      message.textContent = chatInput.value;
+      message.style.padding = "8px";
+      message.style.margin = "5px 0";
+      message.style.background = "#33A88E";
+      message.style.color = "white";
+      message.style.borderRadius = "5px";
+      message.style.alignSelf = "flex-end";
+      chatMessages.appendChild(message);
+      chatInput.value = "";
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+  });
+  // support chat
+
+  const elements = document.querySelectorAll(".aos-animate");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  elements.forEach((element) => observer.observe(element));
+});
   
   // for mobile sidebar toggle
   document.addEventListener("DOMContentLoaded", function () {
