@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Code Documentation</title>
+</head>
+<body>
+
+<h1>Code Documentation</h1>
+
+<hr>
+
+<h2>Table of Contents</h2>
+<ol>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#project-structure">Project Structure</a>
+    <ul>
+      <li><a href="#html-structure">HTML Structure</a></li>
+      <li><a href="#css-structure">CSS Structure</a></li>
+      <li><a href="#javascript-functionality">JavaScript Functionality</a></li>
+    </ul>
+  </li>
+  <li><a href="#key-features">Key Features</a>
+    <ul>
+      <li><a href="#custom-animations">Custom Animations</a></li>
+      <li><a href="#language-selector">Language Selector</a></li>
+      <li><a href="#chat-support">Chat Support</a></li>
+      <li><a href="#mobile-friendly-design">Mobile-Friendly Design</a></li>
+      <li><a href="#pricing-cards">Pricing Cards</a></li>
+    </ul>
+  </li>
+  <li><a href="#code-details">Code Details</a>
+    <ul>
+      <li><a href="#html">HTML</a></li>
+      <li><a href="#css">CSS</a></li>
+      <li><a href="#javascript">JavaScript</a></li>
+    </ul>
+  </li>
+  <li><a href="#how-it-works">How It Works</a>
+    <ul>
+      <li><a href="#animations">Animations</a></li>
+      <li><a href="#language-selector-1">Language Selector</a></li>
+      <li><a href="#chat-support-1">Chat Support</a></li>
+      <li><a href="#mobile-menu">Mobile Menu</a></li>
+    </ul>
+  </li>
+  <li><a href="#future-improvements">Future Improvements</a></li>
+  <li><a href="#conclusion">Conclusion</a></li>
+</ol>
+
+<hr>
+
+<h2 id="overview">Overview</h2>
+<p>This project is a redesign of a website focused on providing coding courses. The site is built using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. The redesign includes custom animations, responsive design, and interactive features such as a language selector, chat support, and a mobile-friendly sidebar. The project is structured to ensure a clean and maintainable codebase.</p>
+
+<hr>
+
+<h2 id="project-structure">Project Structure</h2>
+
+<h3 id="html-structure">HTML Structure</h3>
+<p>The HTML file is divided into the following sections:</p>
+<ul>
+  <li><b>Header</b>: Contains the logo, navigation menu, language selector, and login/signup buttons.</li>
+  <li><b>Main Content</b>: Includes the hero section, course features, about section, pricing cards, and chat support.</li>
+  <li><b>Footer</b>: Contains useful links, contact information, and payment icons.</li>
+</ul>
+
+<h3 id="css-structure">CSS Structure</h3>
+<p>The CSS is organized into:</p>
+<ul>
+  <li><b>Global Styles</b>: Resets, variables, and common utility classes.</li>
+  <li><b>Component Styles</b>: Styles for specific components like the header, hero section, cards, and footer.</li>
+  <li><b>Responsive Styles</b>: Media queries to ensure the site is mobile-friendly.</li>
+  <li><b>Animations</b>: Custom classes for scroll-based animations using <code>IntersectionObserver</code>.</li>
+</ul>
+
+<h3 id="javascript-functionality">JavaScript Functionality</h3>
+<p>The JavaScript file handles:</p>
+<ul>
+  <li><b>Language Selection</b>: Allows users to change the language and updates the UI accordingly.</li>
+  <li><b>Chat Support</b>: Toggles a chat bubble and chat box for user interaction.</li>
+  <li><b>Mobile Sidebar</b>: Manages the opening and closing of the mobile menu.</li>
+  <li><b>Animations</b>: Observes elements and triggers animations when they come into view.</li>
+</ul>
+
+<hr>
+
+<h2 id="key-features">Key Features</h2>
+
+<h3 id="custom-animations">Custom Animations</h3>
+<ul>
+  <li><b>AOS (Animate On Scroll)</b>: Custom classes like <code>.aos-animate</code> are used to trigger animations when elements enter the viewport. The <code>IntersectionObserver</code> API is used to detect when elements are visible and apply the <code>visible</code> class, which triggers the animation.</li>
+  <li><b>Animation Types</b>:
+    <ul>
+      <li>Fade-in (<code>translateY</code> and <code>opacity</code> changes).</li>
+      <li>Slide-in from left or right (<code>translateX</code>).</li>
+      <li>Zoom-in and zoom-out (<code>scale</code> transformations).</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="language-selector">Language Selector</h3>
+<ul>
+  <li><b>Functionality</b>: Users can select a language from a dropdown. The selected language updates the flag and text in the UI.</li>
+  <li><b>Integration with Google Translate</b>: The <code>googleTranslateElementInit</code> function initializes the Google Translate API, allowing dynamic language translation.</li>
+  <li><b>Custom Dropdown</b>: The language dropdown is styled and controlled using JavaScript to toggle visibility.</li>
+</ul>
+
+<h3 id="chat-support">Chat Support</h3>
+<ul>
+  <li><b>Chat Bubble</b>: A floating chat bubble toggles the visibility of a chat box.</li>
+  <li><b>Chat Box</b>: Users can send messages, which are displayed in the chat box. Messages are appended dynamically using JavaScript.</li>
+</ul>
+
+<h3 id="mobile-friendly-design">Mobile-Friendly Design</h3>
+<ul>
+  <li><b>Responsive Layout</b>: The site adapts to different screen sizes using media queries.</li>
+  <li><b>Mobile Menu</b>: A sidebar menu is toggled on mobile devices. The menu can be closed by clicking outside or using a close button.</li>
+  <li><b>Language Selector for Mobile</b>: A separate language selector is provided for mobile devices.</li>
+</ul>
+
+<h3 id="pricing-cards">Pricing Cards</h3>
+<ul>
+  <li><b>Styling</b>: Pricing cards are styled with hover effects and animations.</li>
+  <li><b>Dynamic Content</b>: Cards display pricing information and features in a visually appealing way.</li>
+</ul>
+
+<hr>
+
+<h2 id="code-details">Code Details</h2>
+
+<h3 id="html">HTML</h3>
+<ul>
+  <li><b>Semantic Tags</b>: Proper use of semantic HTML tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code>.</li>
+  <li><b>Accessibility</b>: ARIA attributes and roles are used where necessary to improve accessibility.</li>
+  <li><b>Dynamic Content</b>: Placeholder content is used for dynamic elements like the chat messages and language options.</li>
+</ul>
+
+<h3 id="css">CSS</h3>
+<ul>
+  <li><b>Variables</b>: CSS variables are used for colors, fonts, and transitions to ensure consistency.</li>
+  <li><b>Flexbox and Grid</b>: Used for layout and alignment of elements.</li>
+  <li><b>Transitions and Transforms</b>: Smooth transitions and transforms are applied for hover effects and animations.</li>
+</ul>
+
+<h3 id="javascript">JavaScript</h3>
+<ul>
+  <li><b>Event Listeners</b>: Used for handling user interactions like clicks and input.</li>
+  <li><b>DOM Manipulation</b>: Dynamically updates the DOM for language selection, chat messages, and mobile menu toggling.</li>
+  <li><b>IntersectionObserver</b>: Observes elements and triggers animations when they come into view.</li>
+</ul>
+
+<hr>
+
+<h2 id="how-it-works">How It Works</h2>
+
+<h3 id="animations">Animations</h3>
+<ul>
+  <li>The <code>IntersectionObserver</code> API observes elements with the <code>.aos-animate</code> class.</li>
+  <li>When an element enters the viewport, the <code>visible</code> class is added, triggering the animation.</li>
+</ul>
+
+<h3 id="language-selector-1">Language Selector</h3>
+<ul>
+  <li>Clicking the language dropdown toggles the visibility of the language options.</li>
+  <li>Selecting a language updates the flag and text in the UI and triggers the Google Translate API.</li>
+</ul>
+
+<h3 id="chat-support-1">Chat Support</h3>
+<ul>
+  <li>Clicking the chat bubble toggles the visibility of the chat box.</li>
+  <li>Messages are appended to the chat box when the user sends a message.</li>
+</ul>
+
+<h3 id="mobile-menu">Mobile Menu</h3>
+<ul>
+  <li>Clicking the mobile menu icon toggles the visibility of the sidebar.</li>
+  <li>The sidebar can be closed by clicking outside or using the close button.</li>
+</ul>
+
+<hr>
+
+<h2 id="future-improvements">Future Improvements</h2>
+<ul>
+  <li><b>Backend Integration</b>: Integrate a backend for storing chat messages and user data.</li>
+  <li><b>More Animations</b>: Add more complex animations for a richer user experience.</li>
+  <li><b>Accessibility Improvements</b>: Further improve accessibility with better ARIA roles and keyboard navigation.</li>
+</ul>
+
+<hr>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>This project demonstrates a clean and modular approach to redesigning a website. It incorporates modern web development practices, including responsive design, animations, and interactive features. The code is well-structured and maintainable, making it easy to extend and improve in the future.</p>
+
+<hr>
+
+<p
