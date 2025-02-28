@@ -4,125 +4,304 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Language" content="en" />
 
     <!-- custom css -->
-  
+
     <link rel="stylesheet" href="./assets/css/common.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
-
-     <!-- mobile header -->
-     <div class="mobile-header d-flex align-items-center justify-content-between p-3 d-none">
+    <!-- mobile header -->
+    <div
+      class="mobile-header d-flex align-items-center justify-content-between p-3 d-none"
+    >
       <a href="./index.html" class="mobile-logo">
-          <img src="./assets/images/logo.png" alt="logo">
+        <img src="./assets/images/logo.png" alt="logo" />
       </a>
       <div class="mobile-header-right">
         <div class="language-selector">
           <div class="language-dropdown">
-              <div class="selected-language" onclick="toggleMobileDropdown()">
-                  <img id="mobile-selected-flag" src="https://flagcdn.com/w40/us.png" alt="🇺🇸">
-                  <span id="mobile-selected-language-text">En</span> <span class="arrow">▼</span>
-              </div>
-              <ul class="language-options" id="mobileLanguageList">
-                  <li onclick="changeMobileLanguage('en', 'us', 'English')"><img src="https://flagcdn.com/w40/us.png"> English</li>
-                  <li onclick="changeMobileLanguage('fr', 'fr', 'Français')"><img src="https://flagcdn.com/w40/fr.png"> Français</li>
-                  <li onclick="changeMobileLanguage('no', 'no', 'Norsk')"><img src="https://flagcdn.com/w40/no.png"> Norsk</li>
-                  <li onclick="changeMobileLanguage('sv', 'se', 'Svenska')"><img src="https://flagcdn.com/w40/se.png"> Svenska</li>
-                  <li onclick="changeMobileLanguage('fi', 'fi', 'Suomi')"><img src="https://flagcdn.com/w40/fi.png"> Suomi</li>
-                  <li onclick="changeMobileLanguage('it', 'it', 'Italiano')"><img src="https://flagcdn.com/w40/it.png"> Italiano</li>
-                  <li onclick="changeMobileLanguage('pl', 'pl', 'Polski')"><img src="https://flagcdn.com/w40/pl.png"> Polski</li>
-                  <li onclick="changeMobileLanguage('es', 'es', 'Español')"><img src="https://flagcdn.com/w40/es.png"> Español</li>
-                  <li onclick="changeMobileLanguage('de', 'de', 'Deutsch')"><img src="https://flagcdn.com/w40/de.png"> Deutsch</li>
-                  <li onclick="changeMobileLanguage('nl', 'nl', 'Nederlands')"><img src="https://flagcdn.com/w40/nl.png"> Nederlands</li>
-                  <li onclick="changeMobileLanguage('ja', 'jp', '日本語')"><img src="https://flagcdn.com/w40/jp.png"> 日本語</li>
-                  <li onclick="changeMobileLanguage('pt', 'pt', 'Português')"><img src="https://flagcdn.com/w40/pt.png"> Português</li>
-                  <li onclick="changeMobileLanguage('hu', 'hu', 'Magyar')"><img src="https://flagcdn.com/w40/hu.png"> Magyar</li>
-                  <li onclick="changeMobileLanguage('sk', 'sk', 'Slovenčina')"><img src="https://flagcdn.com/w40/sk.png"> Slovenčina</li>
-                  <li onclick="changeMobileLanguage('id', 'id', 'Bahasa Indonesia')"><img src="https://flagcdn.com/w40/id.png"> Bahasa Indonesia</li>
-                  <li onclick="changeMobileLanguage('cs', 'cz', 'Čeština')"><img src="https://flagcdn.com/w40/cz.png"> Čeština</li>
-                  <li onclick="changeMobileLanguage('et', 'ee', 'Eesti keel')"><img src="https://flagcdn.com/w40/ee.png"> Eesti keel</li>
-                  <li onclick="changeMobileLanguage('lt', 'lt', 'Lietuvių')"><img src="https://flagcdn.com/w40/lt.png"> Lietuvių</li>
-                  <li onclick="changeMobileLanguage('lv', 'lv', 'Latviešu')"><img src="https://flagcdn.com/w40/lv.png"> Latviešu</li>
-                  <li onclick="changeMobileLanguage('tl', 'ph', 'Tagalog')"><img src="https://flagcdn.com/w40/ph.png"> Tagalog</li>
-                  <li onclick="changeMobileLanguage('ro', 'ro', 'Română')"><img src="https://flagcdn.com/w40/ro.png"> Română</li>
-                  <li onclick="changeMobileLanguage('bg', 'bg', 'Български')"><img src="https://flagcdn.com/w40/bg.png"> Български</li>
-                  <li onclick="changeMobileLanguage('ko', 'kr', '한국어')"><img src="https://flagcdn.com/w40/kr.png"> 한국어</li>
-                  <li onclick="changeMobileLanguage('zh-CN', 'cn', '中文 (简体)')"><img src="https://flagcdn.com/w40/cn.png"> 中文 (简体)</li>
-              </ul>
+            <div class="selected-language" onclick="toggleMobileDropdown()">
+              <img
+                id="mobile-selected-flag"
+                src="https://flagcdn.com/w40/us.png"
+                alt="🇺🇸"
+              />
+              <span id="mobile-selected-language-text">En</span>
+              <span class="arrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="6"
+                  viewBox="0 0 8 6"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.85355 1.76257L4.67157 4.94455C4.47631 5.13981 4.15973 5.13981 3.96447 4.94455L0.782486 1.76257C0.587223 1.5673 0.587223 1.25072 0.782485 1.05546C0.977748 0.860197 1.29433 0.860197 1.48959 1.05546L4.31802 3.88389L7.14645 1.05546C7.34171 0.860196 7.65829 0.860196 7.85355 1.05546C8.04882 1.25072 8.04882 1.5673 7.85355 1.76257Z"
+                    fill="#1F1F1F"
+                  />
+                </svg>
+              </span>
+            </div>
+            <ul class="language-options" id="mobileLanguageList">
+              <li onclick="changeMobileLanguage('en', 'us', 'English')">
+                <img src="https://flagcdn.com/w40/us.png" /> English
+              </li>
+              <li onclick="changeMobileLanguage('fr', 'fr', 'Français')">
+                <img src="https://flagcdn.com/w40/fr.png" /> Français
+              </li>
+              <li onclick="changeMobileLanguage('no', 'no', 'Norsk')">
+                <img src="https://flagcdn.com/w40/no.png" /> Norsk
+              </li>
+              <li onclick="changeMobileLanguage('sv', 'se', 'Svenska')">
+                <img src="https://flagcdn.com/w40/se.png" /> Svenska
+              </li>
+              <li onclick="changeMobileLanguage('fi', 'fi', 'Suomi')">
+                <img src="https://flagcdn.com/w40/fi.png" /> Suomi
+              </li>
+              <li onclick="changeMobileLanguage('it', 'it', 'Italiano')">
+                <img src="https://flagcdn.com/w40/it.png" /> Italiano
+              </li>
+              <li onclick="changeMobileLanguage('pl', 'pl', 'Polski')">
+                <img src="https://flagcdn.com/w40/pl.png" /> Polski
+              </li>
+              <li onclick="changeMobileLanguage('es', 'es', 'Español')">
+                <img src="https://flagcdn.com/w40/es.png" /> Español
+              </li>
+              <li onclick="changeMobileLanguage('de', 'de', 'Deutsch')">
+                <img src="https://flagcdn.com/w40/de.png" /> Deutsch
+              </li>
+              <li onclick="changeMobileLanguage('nl', 'nl', 'Nederlands')">
+                <img src="https://flagcdn.com/w40/nl.png" /> Nederlands
+              </li>
+              <li onclick="changeMobileLanguage('ja', 'jp', '日本語')">
+                <img src="https://flagcdn.com/w40/jp.png" /> 日本語
+              </li>
+              <li onclick="changeMobileLanguage('pt', 'pt', 'Português')">
+                <img src="https://flagcdn.com/w40/pt.png" /> Português
+              </li>
+              <li onclick="changeMobileLanguage('hu', 'hu', 'Magyar')">
+                <img src="https://flagcdn.com/w40/hu.png" /> Magyar
+              </li>
+              <li onclick="changeMobileLanguage('sk', 'sk', 'Slovenčina')">
+                <img src="https://flagcdn.com/w40/sk.png" /> Slovenčina
+              </li>
+              <li
+                onclick="changeMobileLanguage('id', 'id', 'Bahasa Indonesia')"
+              >
+                <img src="https://flagcdn.com/w40/id.png" /> Bahasa Indonesia
+              </li>
+              <li onclick="changeMobileLanguage('cs', 'cz', 'Čeština')">
+                <img src="https://flagcdn.com/w40/cz.png" /> Čeština
+              </li>
+              <li onclick="changeMobileLanguage('et', 'ee', 'Eesti keel')">
+                <img src="https://flagcdn.com/w40/ee.png" /> Eesti keel
+              </li>
+              <li onclick="changeMobileLanguage('lt', 'lt', 'Lietuvių')">
+                <img src="https://flagcdn.com/w40/lt.png" /> Lietuvių
+              </li>
+              <li onclick="changeMobileLanguage('lv', 'lv', 'Latviešu')">
+                <img src="https://flagcdn.com/w40/lv.png" /> Latviešu
+              </li>
+              <li onclick="changeMobileLanguage('tl', 'ph', 'Tagalog')">
+                <img src="https://flagcdn.com/w40/ph.png" /> Tagalog
+              </li>
+              <li onclick="changeMobileLanguage('ro', 'ro', 'Română')">
+                <img src="https://flagcdn.com/w40/ro.png" /> Română
+              </li>
+              <li onclick="changeMobileLanguage('bg', 'bg', 'Български')">
+                <img src="https://flagcdn.com/w40/bg.png" /> Български
+              </li>
+              <li onclick="changeMobileLanguage('ko', 'kr', '한국어')">
+                <img src="https://flagcdn.com/w40/kr.png" /> 한국어
+              </li>
+              <li onclick="changeMobileLanguage('zh-CN', 'cn', '中文 (简体)')">
+                <img src="https://flagcdn.com/w40/cn.png" /> 中文 (简体)
+              </li>
+            </ul>
           </div>
+        </div>
+        <div class="mobile-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M3 7H21"
+              stroke
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M3 12H21"
+              stroke
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <path
+              d="M3 17H21"
+              stroke
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
       </div>
-          <div class="mobile-menu">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  <path d="M3 7H21" stroke stroke-width="1.5" stroke-linecap="round" />
-                  <path d="M3 12H21" stroke stroke-width="1.5" stroke-linecap="round" />
-                  <path d="M3 17H21" stroke stroke-width="1.5" stroke-linecap="round" />
-              </svg>
-          </div>
-      </div>
-  </div>
+    </div>
 
-<!-- mobile header -->
+    <!-- mobile header -->
 
     <!-- header area starts -->
     <header class="hedaer-common">
       <div class="section-padding-x header-main">
-          <a href="index.html" class="logo">
-              <img src="./assets/images/logo.png" alt srcset>
-          </a>
-          <span class="close-sidebar-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 384 512">
-                  <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
-              </svg>
-          </span>
-          <div class="menu-area">
-              <a class="menu-area-menu active text-center text-capitalize" href="./index.html">Home</a>
-              <a class="menu-area-menu text-center text-capitalize" href="./about.html">About Us</a>
-              <a class="menu-area-menu text-center text-capitalize" href="contact.html">Contact Us</a>
-          </div>
-          <div class="menu-btn-wrapper">
-              <div id="google_translate_element"></div>
-              <a class="menu-btn menu-btn-1" href="sign-in.html" class>Log In</a>
-              <a class="menu-btn menu-btn-2" href="sign-up.html" class>Sign Up</a>
-              <div class="language-selector language-selector-desktop">
-                <div class="language-dropdown">
-                    <div class="selected-language" onclick="toggleDropdown()">
-                        <img id="selected-flag" src="https://flagcdn.com/w40/us.png" alt="🇺🇸">
-                        <span id="selected-language-text">En</span> <span class="arrow">▼</span>
-                    </div>
-                    <ul class="language-options" id="languageList">
-                        <li onclick="changeLanguage('en', 'us', 'English')"><img src="https://flagcdn.com/w40/us.png"> English</li>
-                        <li onclick="changeLanguage('fr', 'fr', 'Français')"><img src="https://flagcdn.com/w40/fr.png"> Français</li>
-          <li onclick="changeLanguage('no', 'no', 'Norsk')"><img src="https://flagcdn.com/w40/no.png"> Norsk</li>
-          <li onclick="changeLanguage('sv', 'se', 'Svenska')"><img src="https://flagcdn.com/w40/se.png"> Svenska</li>
-          <li onclick="changeLanguage('fi', 'fi', 'Suomi')"><img src="https://flagcdn.com/w40/fi.png"> Suomi</li>
-          <li onclick="changeLanguage('it', 'it', 'Italiano')"><img src="https://flagcdn.com/w40/it.png"> Italiano</li>
-          <li onclick="changeLanguage('pl', 'pl', 'Polski')"><img src="https://flagcdn.com/w40/pl.png"> Polski</li>
-          <li onclick="changeLanguage('es', 'es', 'Español')"><img src="https://flagcdn.com/w40/es.png"> Español</li>
-          <li onclick="changeLanguage('de', 'de', 'Deutsch')"><img src="https://flagcdn.com/w40/de.png"> Deutsch</li>
-          <li onclick="changeLanguage('nl', 'nl', 'Nederlands')"><img src="https://flagcdn.com/w40/nl.png"> Nederlands</li>
-          <li onclick="changeLanguage('ja', 'jp', '日本語')"><img src="https://flagcdn.com/w40/jp.png"> 日本語</li>
-          <li onclick="changeLanguage('pt', 'pt', 'Português')"><img src="https://flagcdn.com/w40/pt.png"> Português</li>
-          <li onclick="changeLanguage('hu', 'hu', 'Magyar')"><img src="https://flagcdn.com/w40/hu.png"> Magyar</li>
-          <li onclick="changeLanguage('sk', 'sk', 'Slovenčina')"><img src="https://flagcdn.com/w40/sk.png"> Slovenčina</li>
-          <li onclick="changeLanguage('id', 'id', 'Bahasa Indonesia')"><img src="https://flagcdn.com/w40/id.png"> Bahasa Indonesia</li>
-          <li onclick="changeLanguage('cs', 'cz', 'Čeština')"><img src="https://flagcdn.com/w40/cz.png"> Čeština</li>
-          <li onclick="changeLanguage('et', 'ee', 'Eesti keel')"><img src="https://flagcdn.com/w40/ee.png"> Eesti keel</li>
-          <li onclick="changeLanguage('lt', 'lt', 'Lietuvių')"><img src="https://flagcdn.com/w40/lt.png"> Lietuvių</li>
-          <li onclick="changeLanguage('lv', 'lv', 'Latviešu')"><img src="https://flagcdn.com/w40/lv.png"> Latviešu</li>
-          <li onclick="changeLanguage('tl', 'ph', 'Tagalog')"><img src="https://flagcdn.com/w40/ph.png"> Tagalog</li>
-          <li onclick="changeLanguage('ro', 'ro', 'Română')"><img src="https://flagcdn.com/w40/ro.png"> Română</li>
-          <li onclick="changeLanguage('bg', 'bg', 'Български')"><img src="https://flagcdn.com/w40/bg.png"> Български</li>
-          <li onclick="changeLanguage('ko', 'kr', '한국어')"><img src="https://flagcdn.com/w40/kr.png"> 한국어</li>
-          <li onclick="changeLanguage('zh-CN', 'cn', '中文 (简体)')"><img src="https://flagcdn.com/w40/cn.png"> 中文 (简体)</li>
-                        </ul>
-                </div>
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.png" alt srcset />
+        </a>
+        <span class="close-sidebar-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20px"
+            height="20px"
+            viewBox="0 0 384 512"
+          >
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </span>
+        <div class="menu-area">
+          <a
+            class="menu-area-menu active text-center text-capitalize"
+            href="./index.html"
+            >Home</a
+          >
+          <a
+            class="menu-area-menu text-center text-capitalize"
+            href="./about.html"
+            >About Us</a
+          >
+          <a
+            class="menu-area-menu text-center text-capitalize"
+            href="contact.html"
+            >Contact Us</a
+          >
+        </div>
+        <div class="menu-btn-wrapper">
+          <div id="google_translate_element"></div>
+          <a class="fill-btn" href="sign-in.html" class><span>Log In</span></a>
+          <a class="outline-btn" href="sign-up.html" class>Sign Up</a>
+          <div class="language-selector language-selector-desktop">
+            <div class="language-dropdown">
+              <div class="selected-language" onclick="toggleDropdown()">
+                <img
+                  id="selected-flag"
+                  src="https://flagcdn.com/w40/us.png"
+                  alt="🇺🇸"
+                />
+                <span id="selected-language-text">En</span>
+                <span class="arrow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="6"
+                    viewBox="0 0 8 6"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.85355 1.76257L4.67157 4.94455C4.47631 5.13981 4.15973 5.13981 3.96447 4.94455L0.782486 1.76257C0.587223 1.5673 0.587223 1.25072 0.782485 1.05546C0.977748 0.860197 1.29433 0.860197 1.48959 1.05546L4.31802 3.88389L7.14645 1.05546C7.34171 0.860196 7.65829 0.860196 7.85355 1.05546C8.04882 1.25072 8.04882 1.5673 7.85355 1.76257Z"
+                      fill="#1F1F1F"
+                    />
+                  </svg>
+                </span>
+              </div>
+              <ul class="language-options" id="languageList">
+                <li onclick="changeLanguage('en', 'us', 'English')">
+                  <img src="https://flagcdn.com/w40/us.png" /> English
+                </li>
+                <li onclick="changeLanguage('fr', 'fr', 'Français')">
+                  <img src="https://flagcdn.com/w40/fr.png" /> Français
+                </li>
+                <li onclick="changeLanguage('no', 'no', 'Norsk')">
+                  <img src="https://flagcdn.com/w40/no.png" /> Norsk
+                </li>
+                <li onclick="changeLanguage('sv', 'se', 'Svenska')">
+                  <img src="https://flagcdn.com/w40/se.png" /> Svenska
+                </li>
+                <li onclick="changeLanguage('fi', 'fi', 'Suomi')">
+                  <img src="https://flagcdn.com/w40/fi.png" /> Suomi
+                </li>
+                <li onclick="changeLanguage('it', 'it', 'Italiano')">
+                  <img src="https://flagcdn.com/w40/it.png" /> Italiano
+                </li>
+                <li onclick="changeLanguage('pl', 'pl', 'Polski')">
+                  <img src="https://flagcdn.com/w40/pl.png" /> Polski
+                </li>
+                <li onclick="changeLanguage('es', 'es', 'Español')">
+                  <img src="https://flagcdn.com/w40/es.png" /> Español
+                </li>
+                <li onclick="changeLanguage('de', 'de', 'Deutsch')">
+                  <img src="https://flagcdn.com/w40/de.png" /> Deutsch
+                </li>
+                <li onclick="changeLanguage('nl', 'nl', 'Nederlands')">
+                  <img src="https://flagcdn.com/w40/nl.png" /> Nederlands
+                </li>
+                <li onclick="changeLanguage('ja', 'jp', '日本語')">
+                  <img src="https://flagcdn.com/w40/jp.png" /> 日本語
+                </li>
+                <li onclick="changeLanguage('pt', 'pt', 'Português')">
+                  <img src="https://flagcdn.com/w40/pt.png" /> Português
+                </li>
+                <li onclick="changeLanguage('hu', 'hu', 'Magyar')">
+                  <img src="https://flagcdn.com/w40/hu.png" /> Magyar
+                </li>
+                <li onclick="changeLanguage('sk', 'sk', 'Slovenčina')">
+                  <img src="https://flagcdn.com/w40/sk.png" /> Slovenčina
+                </li>
+                <li onclick="changeLanguage('id', 'id', 'Bahasa Indonesia')">
+                  <img src="https://flagcdn.com/w40/id.png" /> Bahasa Indonesia
+                </li>
+                <li onclick="changeLanguage('cs', 'cz', 'Čeština')">
+                  <img src="https://flagcdn.com/w40/cz.png" /> Čeština
+                </li>
+                <li onclick="changeLanguage('et', 'ee', 'Eesti keel')">
+                  <img src="https://flagcdn.com/w40/ee.png" /> Eesti keel
+                </li>
+                <li onclick="changeLanguage('lt', 'lt', 'Lietuvių')">
+                  <img src="https://flagcdn.com/w40/lt.png" /> Lietuvių
+                </li>
+                <li onclick="changeLanguage('lv', 'lv', 'Latviešu')">
+                  <img src="https://flagcdn.com/w40/lv.png" /> Latviešu
+                </li>
+                <li onclick="changeLanguage('tl', 'ph', 'Tagalog')">
+                  <img src="https://flagcdn.com/w40/ph.png" /> Tagalog
+                </li>
+                <li onclick="changeLanguage('ro', 'ro', 'Română')">
+                  <img src="https://flagcdn.com/w40/ro.png" /> Română
+                </li>
+                <li onclick="changeLanguage('bg', 'bg', 'Български')">
+                  <img src="https://flagcdn.com/w40/bg.png" /> Български
+                </li>
+                <li onclick="changeLanguage('ko', 'kr', '한국어')">
+                  <img src="https://flagcdn.com/w40/kr.png" /> 한국어
+                </li>
+                <li onclick="changeLanguage('zh-CN', 'cn', '中文 (简体)')">
+                  <img src="https://flagcdn.com/w40/cn.png" /> 中文 (简体)
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
       </div>
-  </header>
+    </header>
     <!-- header area ends -->
 
     <!-- main area starts -->
@@ -130,61 +309,113 @@
     <!-- main content start -->
     <main>
       <!-- home hero section start -->
-       <section class="home-hero-section">
+      <section class="home-hero-section">
         <div class="section-padding-x">
-          
           <div class="hero-content-wrapper common-padding">
-            <h1 class="common-heading-lg mobile-header-h1">Code Your Way to Success: Learn Coding with Our Courses!</h1>
+            <h1 class="common-heading-lg mobile-header-h1">
+              Code Your Way to Success: Learn Coding with Our Courses!
+            </h1>
             <div class="text-section">
-                <h1 class="common-heading-lg">Code Your Way to Success: Learn Coding with Our Courses!</h1>
-                <p class="common-para ">Empower yourself with our comprehensive coding courses designed for all skill levels. From beginner basics to advanced techniques, embark on a transformative journey towards coding mastery.</p>
-                <a href="#" class="hero-btn">Get Started 
-                  <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <h1 class="common-heading-lg aos-animate">
+                Code Your Way to Success: Learn Coding with Our Courses!
+              </h1>
+              <p class="common-para aos-animate delay-1">
+                Empower yourself with our comprehensive coding courses designed
+                for all skill levels. From beginner basics to advanced
+                techniques, embark on a transformative journey towards coding
+                mastery.
+              </p>
+              <a href="#" class="hero-btn aos-animate"
+                >Get Started
+                <span
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <g id="arrow-right-circle">
-                      <path id="Icon" d="M12 16L16 12M16 12L12 8M16 12H8M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path
+                        id="Icon"
+                        d="M12 16L16 12M16 12L12 8M16 12H8M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
                     </g>
-                  </svg></span>
-                </a>
+                  </svg>
+                </span>
+              </a>
             </div>
-            <div class="slider-container">
-                <div class="slider">
-                    <div class="slide" style="background-image: url('./assets/images/coding_model.png');"></div>
-                    <div class="slide" style="background-image: url('./assets/images/coading-model-2.png');"></div>
-                    <div class="slide" style="background-image: url('./assets/images/coading-model-3.png');"></div>
-                </div>
+            <div class="slider-container aos-animate right">
+              <div class="slider">
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('./assets/images/coding_model.png');
+                  "
+                ></div>
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('./assets/images/coading-model-2.png');
+                  "
+                ></div>
+                <div
+                  class="slide"
+                  style="
+                    background-image: url('./assets/images/coading-model-3.png');
+                  "
+                ></div>
+              </div>
             </div>
+          </div>
         </div>
-        </div>
-       </section>
+      </section>
 
       <!-- home hero section end -->
 
-
-       <!-- card section area start -->
-        <section class="course-card-section-area common-padding">
-          <div class="section-padding-x">
-            <h1 class="common-sub-heading feature">Features</h1>
-            <h2 class="course-card-header common-heading">Why Choose Our Coding Courses?</h2>
-            <div class="course-card-wrapper">
-                <div class="course-card">
-                    <div class="icon">🎓</div>
-                    <h3 class="course-title">Comprehensive Curriculum</h3>
-                    <p class="common-para course-description">Explore a well-rounded program covering essential coding topics, guiding you from fundamentals to advanced techniques for a thorough understanding.</p>
-                </div>
-                <div class="course-card">
-                    <div class="icon">📈</div>
-                    <h3 class="course-title">Premium Learning Materials</h3>
-                    <p class="common-para course-description">Elevate your learning experience with a rich array of resources, from video tutorials to dynamic coding exercises, designed to keep you challenged and motivated.</p>
-                </div>
-                <div class="course-card">
-                    <div class="icon">🏆</div>
-                    <h3 class="course-title">Practical Coding Challenges</h3>
-                    <p class="common-para course-description">Put your skills to the test with hands-on exercises and projects, immersing yourself in real-world scenarios to enhance your problem-solving abilities.</p>
-                </div>
+      <!-- card section area start -->
+      <section class="course-card-section-area common-padding">
+        <div class="section-padding-x">
+          <h1 class="common-sub-heading feature aos-animate">Features</h1>
+          <h2 class="course-card-header common-heading aos-animate delay-1">
+            Why Choose Our Coding Courses?
+          </h2>
+          <div class="course-card-wrapper">
+            <div class="course-card aos-animate zoom-out">
+              <div class="icon">🎓</div>
+              <h3 class="course-title">Comprehensive Curriculum</h3>
+              <p class="common-para course-description">
+                Explore a well-rounded program covering essential coding topics,
+                guiding you from fundamentals to advanced techniques for a
+                thorough understanding.
+              </p>
+            </div>
+            <div class="course-card aos-animate zoom-out">
+              <div class="icon">📈</div>
+              <h3 class="course-title">Premium Learning Materials</h3>
+              <p class="common-para course-description">
+                Elevate your learning experience with a rich array of resources,
+                from video tutorials to dynamic coding exercises, designed to
+                keep you challenged and motivated.
+              </p>
+            </div>
+            <div class="course-card aos-animate zoom-out">
+              <div class="icon">🏆</div>
+              <h3 class="course-title">Practical Coding Challenges</h3>
+              <p class="common-para course-description">
+                Put your skills to the test with hands-on exercises and
+                projects, immersing yourself in real-world scenarios to enhance
+                your problem-solving abilities.
+              </p>
             </div>
           </div>
-        </section>
-       <!-- card section area end -->
+        </div>
+      </section>
+      <!-- card section area end -->
 
       <!-- pricing card area start -->
       <section class="pricing-card-section common-padding">
@@ -193,12 +424,8 @@
             <div class="card gold pricing-card-item">
               <h1 class="card-heading">Standard</h1>
               <div class="price">57.99 EUR</div>
-              <p>
-                Billed every 14 days
-              </p>
-              <h2 class="trial">3-Day Trial
-                |
-                3.00 EUR</h2>
+              <p>Billed every 14 days</p>
+              <h2 class="trial">3-Day Trial | 3.00 EUR</h2>
               <ul>
                 <li>Selected Coding Course Access</li>
                 <li>Simple and Easy tutorials</li>
@@ -219,12 +446,8 @@
             <div class="card gold pricing-card-item">
               <h1 class="card-heading">Deluxe</h1>
               <div class="price">59.99 EUR</div>
-              <p>
-                Billed every 14 days
-              </p>
-              <h2 class="trial">3-Day Trial
-                |
-                3.00 EUR</h2>
+              <p>Billed every 14 days</p>
+              <h2 class="trial">3-Day Trial | 3.00 EUR</h2>
               <ul>
                 <li>Selected Coding Course Access</li>
                 <li>Simple and Easy tutorials</li>
@@ -242,95 +465,114 @@
                 </div>
               </button>
             </div>
-  
-  
           </div>
         </div>
-    
       </section>
       <!-- pricing card area end -->
-
     </main>
     <!-- main content start -->
 
-
     <!-- footer start-->
-     <footer>
+    <footer>
       <div class="footer-content-area section-padding-x">
         <div class="footer-top common-padding">
           <div class="footer-top-content-area">
             <div class="footer-logo-area">
-              <img src="./assets/images/logo.png" alt="" srcset="">
+              <img src="./assets/images/logo.png" alt="" srcset="" />
             </div>
             <div class="footer-section">
-                <h3>USEFUL LINKS</h3>
-                <div class="link-area-footer">
-                  <a class="footer-link" href="./about.html">About Us</a>
-                  <a class="footer-link" href="#">Contact Us</a>
-                  <a class="footer-link" href="#">Terms & Conditions</a>
-                  <a class="footer-link" href="#">Privacy Policy</a>
-                  <a class="footer-link" href="#">Cookie Policy</a>
-                </div>
+              <h3>USEFUL LINKS</h3>
+              <div class="link-area-footer">
+                <a class="footer-link" href="./about.html">About Us</a>
+                <a class="footer-link" href="#">Contact Us</a>
+                <a class="footer-link" href="#">Terms & Conditions</a>
+                <a class="footer-link" href="#">Privacy Policy</a>
+                <a class="footer-link" href="#">Cookie Policy</a>
+              </div>
             </div>
             <div class="footer-section">
-                <h3>CONTACT INFORMATION</h3>
-                <div class="information-wrapper">
-                  <p><span class="information-first-span">Email:</span> <a href="mailto:support@serdevtoolkit.com" target="_blank" rel="noopener noreferrer"><span class="span">support@serdevtoolkit.com<br></span></a></p>
-                <p><span class="information-first-span">Phone:</span> <a href="tel:+353 818 000 258" target="_blank" rel="noopener noreferrer"><span class="span">+353 818 000 258<br></span></a></p>
-                <p><span class="information-first-span">Hours</span>: Monday - Friday 8:00am - 00am (CET)</p>
-                <p><span class="information-first-span">Address:</span> 90 Cluain Riocaird Headford road, Co. Galway, H91 r72d, Republic of Ireland</p>
-                </div>
+              <h3>CONTACT INFORMATION</h3>
+              <div class="information-wrapper">
+                <p>
+                  <span class="information-first-span">Email:</span>
+                  <a
+                    href="mailto:support@serdevtoolkit.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span class="span">support@serdevtoolkit.com<br /></span
+                  ></a>
+                </p>
+                <p>
+                  <span class="information-first-span">Phone:</span>
+                  <a
+                    href="tel:+353 818 000 258"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span class="span">+353 818 000 258<br /></span
+                  ></a>
+                </p>
+                <p>
+                  <span class="information-first-span">Hours</span>: Monday -
+                  Friday 8:00am - 00am (CET)
+                </p>
+                <p>
+                  <span class="information-first-span">Address:</span> 90 Cluain
+                  Riocaird Headford road, Co. Galway, H91 r72d, Republic of
+                  Ireland
+                </p>
+              </div>
             </div>
           </div>
-            <div class="payment-icons">
-              <img src="./assets/images/visa.svg" alt="MasterCard">
-              <img src="./assets/images/master.svg" alt="Visa">
+          <div class="payment-icons">
+            <img src="./assets/images/visa.svg" alt="MasterCard" />
+            <img src="./assets/images/master.svg" alt="Visa" />
           </div>
         </div>
         <div class="footer-bottom">
-            <p>Copyright © SerDevToolKit 2025, Sereniva Limited | All rights reserved.</p>
-           
+          <p>
+            Copyright © SerDevToolKit 2025, Sereniva Limited | All rights
+            reserved.
+          </p>
         </div>
-    </div>
-     </footer>
+      </div>
+    </footer>
     <!-- footer end-->
 
     <!-- javascript -->
 
     <script src="./assets/js/main.js"></script>
     <script>
-      let slider = document.querySelector('.slider');
-      let slides = document.querySelectorAll('.slide');
+      let slider = document.querySelector(".slider");
+      let slides = document.querySelectorAll(".slide");
       let index = 0;
-  
+
       function cloneSlides() {
-          slides.forEach(slide => {
-              let clone = slide.cloneNode(true);
-              slider.appendChild(clone);
-          });
+        slides.forEach((slide) => {
+          let clone = slide.cloneNode(true);
+          slider.appendChild(clone);
+        });
       }
-  
+
       cloneSlides();
-  
+
       function autoSlide() {
+        index++;
+        if (index >= slides.length) {
+          slider.style.transition = "none";
+          slider.style.transform = "translateX(0)";
+          index = 0;
+          slider.offsetWidth;
+          slider.style.transition = "transform 0.5s ease-in-out";
           index++;
-          if (index >= slides.length) {
-              slider.style.transition = 'none';
-              slider.style.transform = 'translateX(0)';
-              index = 0;
-              slider.offsetWidth;
-              slider.style.transition = 'transform 0.5s ease-in-out';
-              index++; 
-              slider.style.transform = `translateX(-${index * 100}%)`;
-          } else {
-              slider.style.transform = `translateX(-${index * 100}%)`;
-          }
+          slider.style.transform = `translateX(-${index * 100}%)`;
+        } else {
+          slider.style.transform = `translateX(-${index * 100}%)`;
+        }
       }
-  
+
       setInterval(autoSlide, 3000);
-  </script>
+    </script>
 
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>
