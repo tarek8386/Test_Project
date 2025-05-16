@@ -124,6 +124,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function toggleDropdown() {
     document.getElementById("languageList").classList.toggle("show-lan");
   }
+
+
+
+  // mobile
   
   function changeMobileLanguage(langCode, countryCode, languageName) {
     let googleTranslateFrame = document.querySelector(".goog-te-combo");
